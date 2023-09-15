@@ -12,16 +12,16 @@ arcpy.env.overwriteOutput = True
 arcpy.env.outputZFlag = "Enabled"
 
 #===============================================================================
-# KLASA DATA
+# CLASS DATA
 #===============================================================================
 class Data(object):
-    """Klasa przechowująca dane do obliczeń - elemnty modelu"""
+    """A class storing data for calculations - model elements"""
 
-    # konstruktor
+    # constructor
     def __init__(self, settings):
 
-        # inicjalizowanie list przechowujących obiekty
-        self.pointSourceList = [] # źródła punktowe zwykłe i utworzone ze źródeł powierzchniowych
+        # initializing lists storing objects
+        self.pointSourceList = [] # ordinary point sources and those created from surface sources
         self.lineSourceList = []
         self.buildingList = []
         self.noiseWallList = []
@@ -35,7 +35,7 @@ class Data(object):
 #         self.buildingsPath = settings["GEODATABASE"] + "\\buildings"
 #         self.noiseWallsPath = settings["GEODATABASE"] + "\\noiseWalls"
 
-    # WŁASNOŚCI ----------------------------------------------------------------
+    # PROPERTIES ----------------------------------------------------------------
 
     @property
     def PointSourcesCount(self):
@@ -65,7 +65,7 @@ class Data(object):
     def DiffractionEdgesCount(self):
         return len(self.diffractionEdgeList)
 
-    # METODY -------------------------------------------------------------------
+    # METHODS -------------------------------------------------------------------
 
     # dodawanie krawędzi dyfrakcji
     def updateDiffractionEdgeList(self, modelElement, index):
@@ -294,7 +294,7 @@ class Data(object):
                 self.calcPointList.extend(gridPoints)
 
 #===============================================================================
-# KLASA DIFFRACTION DATA
+# CLASS DIFFRACTION DATA
 #===============================================================================
 class DiffractionData(object):
     def __init__(self):
