@@ -1,13 +1,11 @@
-# IsoNoiose
-This is programming part of my diploma thesis at GIS postgraduate studies at University of Gdańsk called:
+# ENVNoise
+This is a non-working plugin for QGIS:
 
-*Noise propagation model. Implementation of International Standard ISO 9613-2 “Acoustics – Attenuation of sound during propagation outdoors – Part 2: General method of calculation”*
+*Implementation of International Standard ISO 9613-2 “Acoustics – Attenuation of sound during propagation outdoors – Part 2: General method of calculation”*
 
-It is an ArcGIS Python Toolbox (Python + ArcPy and Numpy packages). To use it you need ArcGIS Desktop software >= 10.0. 
+It is an QGIS Python Toolbox (Python and Numpy packages). To use it you QGIS Desktop software >= #.0. 
 
-To find more check [poster](https://github.com/michkowalczuk/IsoNoise/blob/master/poster/Michal_Kowalczuk_Noise_propagation_model.png?raw=true).
-
-In IsoNoise Python Toolbox there are 3 tools:
+In ENVNoise Python Toolbox there are # tools:
 
 ![isonoise-toolbox](https://user-images.githubusercontent.com/23641410/29656670-6ac62e74-88b5-11e7-9b4e-865445434595.PNG)
 
